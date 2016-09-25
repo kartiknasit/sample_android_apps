@@ -4,4 +4,5 @@
     <string name="tough_questions">Tough Questions</string>
     <string name="see_our_other_apps">See Our Other Apps</string>
     <string name="rate_app">Rate App</string>
+    <string name="title_activity_simple_questions">SimpleQuestionsActivity</string>
 </resources>
