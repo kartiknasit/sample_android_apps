@@ -5,4 +5,8 @@
     <string name="see_our_other_apps">See Our Other Apps</string>
     <string name="rate_app">Rate App</string>
     <string name="title_activity_simple_questions">SimpleQuestionsActivity</string>
+    <string name="current_question_count">XX/</string>
+    <string name="total_quesiton_count">YY</string>
+    <string name="question">Question:</string>
+    <string name="answer">Press A for Answer</string>
 </resources>

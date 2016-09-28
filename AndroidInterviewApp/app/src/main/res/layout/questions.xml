@@ -11,35 +11,38 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8"
-        android:gravity="center">
+        android:gravity="center"
+        android:background="@drawable/topbottom">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="XX/"
+            android:text="@string/current_question_count"
             android:id="@+id/current_question_count_textView"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="YY"
+            android:text="@string/total_quesiton_count"
             android:id="@+id/total_question_count_textView"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"/>
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="80">
+        android:layout_weight="80"
+        android:background="@drawable/middle">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="15dp"
-            android:text="Question:"
-            android:id="@+id/question_textView" />
+            android:text="@string/question"
+            android:id="@+id/question_textView"
+            android:textColor="@color/black"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -50,8 +53,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
-                android:text="Press A for Answer"
-                android:id="@+id/answer_textView" />
+                android:text="@string/answer"
+                android:id="@+id/answer_textView"
+                android:textColor="@color/black"/>
         </ScrollView>
     </LinearLayout>
 
@@ -60,24 +64,25 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="12"
-        android:gravity="center|center_horizontal">
+        android:gravity="center|center_horizontal"
+        android:background="@drawable/topbottom">
 
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="New Button"
-            android:id="@+id/left_arrow_btn" />
+            android:id="@+id/left_arrow_btn"
+            android:background="@drawable/left_arrow"/>
 
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="New Button"
-            android:id="@+id/show_answer_btn" />
+            android:id="@+id/show_answer_btn"
+            android:background="@drawable/answer_button"/>
 
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="New Button"
-            android:id="@+id/right_arrow_btn" />
+            android:id="@+id/right_arrow_btn"
+            android:background="@drawable/right_arrow"/>
     </LinearLayout>
 </LinearLayout>
