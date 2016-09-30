@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tough_questions_array">
+        <item>What is JVM?</item>
+        <item>What is Dalvik VM?</item>
+        <item>What is Programming Language?</item>
+        <item>What is Framework?</item>
+        <item>What is Android?</item>
+        <item>What is Java?</item>
+        <item>What is Scala?</item>
+        <item>What is SQL Lite?</item>
+        <item>What is Android Studio?</item>
+    </string>
+</resources>

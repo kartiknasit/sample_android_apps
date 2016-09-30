@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tough_answers_array">
+        <item>JVM is acronym for Java Virtual Machine is where we can run our Java Programs.</item>
+        <item>Dalvik VM is layer on mobile device built using Linux Kernel on which Android OS runs.</item>
+        <item>Programming Language is high level tool to create software.</item>
+        <item>Framework makes to easy to write certain complex Operations in Programming Language.</item>
+        <item>Android is Mobile OS.</item>
+        <item>Java is Programming Language. Based on Object Oriented Concepts.</item>
+        <item>Scala is Programming Language. Based on Functional and Object Oriented Concepts.</item>
+        <item>SQL Lite is Database used in Android OS.</item>
+        <item>Android Studio is IDE in which we can build Android Applications.</item>
+    </string>
+</resources>
