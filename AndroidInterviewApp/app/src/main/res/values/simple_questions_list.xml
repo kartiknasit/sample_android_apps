@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="simple_questions_array">
+    <string-array name="simple_questions_array">
         <item>What is Android?</item>
         <item>What is Java?</item>
         <item>What is Scala?</item>
@@ -10,5 +10,5 @@
         <item>What is Framework?</item>
         <item>What is SQL Lite?</item>
         <item>What is Android Studio?</item>
-    </string>
+    </string-array>
 </resources>
