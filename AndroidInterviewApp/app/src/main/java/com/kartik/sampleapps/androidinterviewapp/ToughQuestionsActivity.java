@@ -98,6 +98,24 @@ public class ToughQuestionsActivity extends AppCompatActivity implements View.On
             case R.id.show_answer_btn:
                 answer_textView.setText(tough_answers[index]);
                 break;
+            case R.id.speak_btn:
+                if(result == TextToSpeech.LANG_NOT_SUPPORTED
+                        || result == TextToSpeech.LANG_MISSING_DATA) {
+                    Toast.makeText(ToughQuestionsActivity.this,
+                            "Operation not Suuported for your device.",
+                            Toast.LENGTH_SHORT).show();
+                } else {
+                    textToSpeech.speak(tough_answers[index],
+                            TextToSpeech.QUEUE_FLUSH,
+                            null);
+                }
+
+                break;
+            case R.id.mute_btn:
+                if(textToSpeech != null) {
+                    textToSpeech.stop();
+                }
+                break;
             default:
                 break;
         }
