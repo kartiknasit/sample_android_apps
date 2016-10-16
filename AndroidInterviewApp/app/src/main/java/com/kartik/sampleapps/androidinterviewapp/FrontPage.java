@@ -41,6 +41,17 @@ public class FrontPage extends AppCompatActivity implements View.OnClickListener
                 startActivity(tough_questions_activity);
                 break;
             case R.id.see_our_other_apps_btn:
+                Uri otherAppUri = null;
+                Intent otherAppIntent = null;
+                try {
+                    otherAppUri = Uri.parse("market://developer?id=Scoompa");
+                    otherAppIntent = new Intent(Intent.ACTION_VIEW, otherAppUri);
+                    startActivity(otherAppIntent);
+                } catch (ActivityNotFoundException activityNotFound) {
+                    otherAppUri = Uri.parse("https://play.google.com/store/apps/developer?id=Scoompa");
+                    otherAppIntent = new Intent(Intent.ACTION_VIEW, otherAppUri);
+                    startActivity(otherAppIntent);
+                }
                 break;
             case R.id.rate_app_btn:
                 Uri appUri = null;
