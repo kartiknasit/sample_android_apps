@@ -1,6 +1,8 @@
 package com.kartik.sampleapps.androidinterviewapp;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -41,6 +43,17 @@ public class FrontPage extends AppCompatActivity implements View.OnClickListener
             case R.id.see_our_other_apps_btn:
                 break;
             case R.id.rate_app_btn:
+                Uri appUri = null;
+                Intent rateApp = null;
+                try {
+                    appUri = Uri.parse("market://details?id=net.mustafaozcan.setcontactphoto");
+                    rateApp = new Intent(Intent.ACTION_VIEW, appUri);
+                    startActivity(rateApp);
+                } catch (ActivityNotFoundException activityNotFound) {
+                    appUri = Uri.parse("https://play.google.com/store/apps/details?id=net.mustafaozcan.setcontactphoto");
+                    rateApp = new Intent(Intent.ACTION_VIEW, appUri);
+                    startActivity(rateApp);
+                }
                 break;
             default:
                 break;
